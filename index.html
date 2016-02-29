@@ -1,0 +1,46 @@
+     <!DOCTYPE html>
+<html lang="en" ng-app="myApp">
+  <head>
+    <title>Florianópolis Transport Routes</title>
+    
+    <!-- adds -->
+    <script src="js/lib/angular.min.js"></script>
+    <script src="app.js"></script>
+    <script src="js/lib/angular-route.min.js"></script>
+    <script src="js/lib/angular-base64.js"></script>
+    <script src="js/lib/angular-fancy-modal.js"></script>
+    <script src="js/lib/angular-google-maps.min.js"></script>
+    <script src="js/lib/lodash.js"></script>
+    <script src="https://rawgit.com/nmccready/angular-simple-logger/master/dist/angular-simple-logger.js"></script>
+
+    <script src='//maps.googleapis.com/maps/api/js?sensor=false'></script>
+    <!-- config -->
+     <script src="js/config/routeConfig.js"></script>
+     <!-- controllers -->
+    <script src="js/controllers/lineController.js"></script>
+    <script src="js/controllers/mapsController.js"></script>
+     <script src="js/controllers/routeDetailController.js"></script>
+     <!-- service -->
+    <script src="js/services/arcTouchAPIService.js"></script>
+    <script src="js/services/gmapsAPIService.js"></script>
+    <script src="js/services/viewShareService.js"></script>
+    <!-- css -->
+    <link rel="stylesheet" href="css/animate.min.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/angular-fancy-modal.min.css">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta charset="utf-8">
+    
+  </head>
+
+  <body>
+   <header ng-include src="'partials/header.html'"></header>
+       
+        <div ng-view>
+            
+    </div>
+    </div>
+  </body>
+</html>

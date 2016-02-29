@@ -1,0 +1,16 @@
+      <div class="form group col-xs-12">
+        <p class="text-center col-xs-8 col-xs-offset-2" style="font-weight: bold;font-size: 15px;">{{detail}}</p>
+        </br>
+         <p class="text-center col-xs-4 col-xs-offset-4" style="font-weight: bold;font-size: 15px;">Line Route:</p>
+        <ul class="related-results rel-results col-xs-12 col-sm-4 col-sm-offset-4 text-center list-styling">
+          <li class="li-routedetails li-style animate-me" ng-repeat="routedetail in routedetails | limitTo: paginationLimit()">
+            <div class="text-center">{{routedetail.name}}</div>
+            
+          </li>
+       
+        </ul>
+      </div>
+      <button class="bt-search animate-me col-xs-4 col-xs-offset-4 col-sm-2 col-sm-offset-5"ng-hide="hasMoreItemsToShow()" ng-click="showMoreItems()" style="margin-bottom: 12px;">
+          Show more
+         </button>
+    

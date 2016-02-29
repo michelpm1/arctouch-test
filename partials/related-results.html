@@ -1,0 +1,8 @@
+<hr>
+<p class="text-center col-xs-4 col-xs-offset-4" style="font-weight: bold;font-size: 18px;">Bus lines:</p>
+<ul class=" animated bounce related-results rel-results col-xs-12 col-sm-4 col-sm-offset-4 text-center list-styling">
+  <li ng-repeat="detail in details" class="li-style animate-me">
+      <a ng-click="getDetails(detail)" href="#/details/{{detail.id}}" >{{detail.longName}}</a>
+  </li>
+</ul>
+

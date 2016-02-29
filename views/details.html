@@ -1,0 +1,30 @@
+<p class="text-center col-xs-8 col-xs-offset-2" style="font-weight: bold;font-size: 15px;">{{detail}}</p>
+</br>
+</br>
+</br>
+  <div><p class="text-center col-xs-8 col-xs-offset-2" style="font-weight: bold;font-size: 15px;">Weekday</p> 
+  </br>
+  </br>
+  <span ng-repeat="routeDeparture in routeDepartures" ng-if="routeDeparture.calendar=='WEEKDAY'">
+    <span>{{routeDeparture.time}}</span> 
+    <span>|</span>
+  </span>
+  </div>
+  </br>
+  <div><p class="text-center col-xs-8 col-xs-offset-2" style="font-weight: bold;font-size: 15px;">Saturday</p>
+  </br>
+  </br>
+  <span ng-repeat="routeDeparture in routeDepartures" ng-if="routeDeparture.calendar=='SATURDAY'">
+    <span class="text-center">{{routeDeparture.time}}</span>
+    <span>|</span>
+   </div>
+   </br>
+   
+  <div><p class="text-center col-xs-8 col-xs-offset-2" style="font-weight: bold;font-size: 15px;">Sunday</p>
+  </br>
+  </br>
+  <span ng-repeat="routeDeparture in routeDepartures" ng-if="routeDeparture.calendar=='SUNDAY'">
+    <span>{{routeDeparture.time}}</span>
+    <span>|</span>
+  </span>
+  </div>

@@ -1,0 +1,5 @@
+ <ui-gmap-google-map ng-click="getReverseGeo(); close()" center="map.generic.center" zoom="map.generic.zoom" draggable="true" events="map.generic.events">
+        <ui-gmap-marker ng-repeat="m in map.generic.markers" coords="m.coords" icon="m.icon" idkey="m.id"></ui-gmap-marker>
+ </ui-gmap-google-map>
+ 
+ <p></p>
