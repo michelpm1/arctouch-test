@@ -18,6 +18,6 @@ gulp.task('serveprod', function() {
         port: process.env.PORT || 5000, // localhost:5000
         livereload: false
     });
-});
+}); 
 
 gulp.task('default', ['serveprod']);
