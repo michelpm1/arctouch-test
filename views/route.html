@@ -5,12 +5,11 @@
         <ul class="related-results rel-results col-xs-12 col-sm-4 col-sm-offset-4 text-center list-styling">
           <li class="li-routedetails li-style animate-me" ng-repeat="routedetail in routedetails | limitTo: paginationLimit()">
             <div class="text-center">{{routedetail.name}}</div>
-            
+
           </li>
-       
+
         </ul>
       </div>
       <button class="bt-search animate-me col-xs-4 col-xs-offset-4 col-sm-2 col-sm-offset-5"ng-hide="hasMoreItemsToShow()" ng-click="showMoreItems()" style="margin-bottom: 12px;">
           Show more
          </button>
-    
