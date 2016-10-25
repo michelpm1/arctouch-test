@@ -1,8 +1,12 @@
 Welcome to Transport APP demo
 
-For test the APP you only need a HTTP Server, like Apache to run the pages.
+For test first:
 
-You can access a live demo here: http://transportapp.esy.es/
+npm install
+then
+gulp
+
+You can access a live demo here: https://transportapp.herokuapp.com
 
 
 
